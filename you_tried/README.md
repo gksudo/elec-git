@@ -1,3 +1,3 @@
-This is an app I made to learn electron.
+# you tried
 
-It's a sanity checker.
+Sanity checker.
