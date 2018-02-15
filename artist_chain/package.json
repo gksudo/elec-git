@@ -1,0 +1,11 @@
+{
+  "name": "artist-chain",
+  "version": "0.1.0",
+  "description": "A music shuffler",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/trillmatomaton/elec-git",
+  "license": "MIT"
+}

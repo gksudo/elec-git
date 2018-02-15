@@ -1,0 +1,14 @@
+{
+  "name": "you-tried",
+  "version": "0.1.0",
+  "description": "A sanity checker",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/trillmatomaton/elec-git",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.0.0"
+  }
+}

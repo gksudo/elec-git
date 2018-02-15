@@ -2,23 +2,55 @@
 <html>
 
 <head>
-  <meta charset="UTF-8">
-  <title>Hello World!</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <title>Welcome back!</title>
 </head>
 
 <body>
-  <h1>Hello World!</h1>
+  <div id="top" class="jumbotron">
+    <h1 align="center">What do you want to work on?</h1>
+  </div>
+
+
+  <div id="task-list" class="container">
+
+    <a href="#task-info" id="task" class="btn btn-block" data-toggle="collapse">
+      <h2>Task 1</h1>
+    </a>
+    <div id="task-info" class="collapse">
+      <!-- task.html -->
+      <a href="">Task 1 info</p>
+    </div>
+
+
+  </div>
+
+
   <!--
     All of the Node.js APIs are available in this renderer process.
     We are using Node.js <script>document.write(process.versions.node)</script>,
     Chromium <script>document.write(process.versions.chrome)</script>,
     and Electron <script>document.write(process.versions.electron)</script>.
-
-  <script>
-    // You can also require other files to run in this process
-    //require('./renderer.js')
-  </script>
   -->
+  <script>
+    // require external js here.
+    require('./functions/tasks.js')
+  </script>
+
 </body>
 
 </html>
