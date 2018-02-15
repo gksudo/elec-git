@@ -26,18 +26,27 @@
   </div>
 
 
-  <div id="task-list" class="container">
+  <div class="container">
+    <div id="task-list" class="panel-group">
 
-    <a href="#task-info" id="task" class="btn btn-block" data-toggle="collapse">
-      <h2>Task 1</h1>
-    </a>
-    <div id="task-info" class="collapse">
-      <!-- task.html -->
-      <a href="">Task 1 info</p>
-    </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2 class="panel-title">
+          <a data-toggle="collapse" data-parent="#task-list" href="#task-info">
+            Task 1
+          </a>
+        </h2>
+        </div>
+        <div id="task-info" class="panel-collapse collapse">
+          <div class="panel-body">
+            <a href="">Task 1 info</p>
+           </div>
+         </div>
+       </div>
 
 
   </div>
+</div>
 
 
   <!--
