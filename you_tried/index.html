@@ -7,15 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- stylesheets -->
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="./assets/css/styles.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 
   <!-- scripts -->
+  <!-- jquery refuses to work without this line. -->
   <script>
     delete module.exports
   </script>
-  <!-- jquery refuses to work without this line. -->
   <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
@@ -25,11 +25,14 @@
 
 <body>
   <div id="top" class="jumbotron">
-    <h1 align="center" style="font-size: 300%">What do you want to work on?</h1>
+    <h1 id="jtron" class="container">What do you want to work on?</h1>
   </div>
 
   <div id="task-list-container" class="container">
 
+    <a href="" style="float: right"><img src="./assets/icons/add.png" title="add"></a>
+
+    <br class="cb">
 
     <div id="task-list" class="panel-group">
 
@@ -43,7 +46,7 @@
         </div>
         <div id="task-info" class="panel-collapse collapse">
           <div class="panel-body">
-            <a href="./ex_pages/task.html">Task 1 info</p>
+            <a href="./assets/ex_pages/task.html">Task 1 info</p>
            </div>
          </div>
        </div>
@@ -58,28 +61,32 @@
           </div>
           <div id="task-info-2" class="panel-collapse collapse">
             <div class="panel-body">
+              <a href="./assets/ex_pages/task.html">Task 2 info</a>
             </div>
           </div>
         </div>
 
 
 
-  </div>
+      </div>
 
 
-  </div>
+    </div>
+    <div class="credits">
+        add icon made by <a style="color: black" href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a>
+        from <a style="color: black" href="https://www.flaticon.com/" title="Flaticon">Flaticon</a>
+    </div>
 
-
-  <!--
+    <!--
     All of the Node.js APIs are available in this renderer process.
     We are using Node.js <script>document.write(process.versions.node)</script>,
     Chromium <script>document.write(process.versions.chrome)</script>,
     and Electron <script>document.write(process.versions.electron)</script>.
   -->
-  <script>
-    // require external js here.
-    require('./functions/tasks.js')
-  </script>
+    <script>
+      // require external js here.
+      require('./assets/functions/tasks.js')
+    </script>
 
 </body>
 
