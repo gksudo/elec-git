@@ -1,0 +1,64 @@
+body
+{
+  font-family: 'Montserrat', sans-serif;
+}
+
+#jtron
+{
+  text-align: center;
+  font-size: 380%;
+  color: #fff;
+}
+
+#top
+{
+  background-color: #000;
+}
+
+#task-list-container
+{
+  margin-top: 30px;
+}
+
+#task-list
+{
+  margin-top: 10px;
+}
+
+#task
+{
+  margin-top: 15px;
+}
+
+
+br.cb
+{
+  clear: both;
+}
+
+.panel
+{
+  margin-top: 10px;
+}
+
+.accordionItem-hide
+{
+    display: none;
+}
+
+.accordionItem-show
+{
+    background-color: #444;
+    width: 100%;
+    height: 50%;
+    padding-top: 3vmax;
+    font-size: 2vmax;
+}
+
+.credits
+{
+  font-size: 10px;
+  line-height: 10px;
+  margin: auto;
+  text-align: center;
+}
