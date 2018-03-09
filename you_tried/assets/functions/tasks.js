@@ -1,5 +1,9 @@
+var adding = 0;
+
 function new_task()
 {
+  if (adding === 1) return;
+
   var txt = '<div class="panel panel-default">'
             + '<div class="panel-heading">'
               + '<h2 class="panel-title">'
@@ -15,6 +19,8 @@ function new_task()
               + '</div>';
 
   $("#task-list").prepend(txt);
+
+  adding = 1;
 
   var title = document.getElementById("title");
 
@@ -35,4 +41,15 @@ function create_task( title )
   console.log(title);
 
   alert("up next");
+}
+
+function rm( id )
+{
+  var panel = id.parentNode.parentNode.parentNode;
+
+  $('id').parentNode.parentNode.parentNode.remove();
+
+  if ( confirm("Are you sure you want to delete this? " + panel.id) )
+  {
+  }
 }

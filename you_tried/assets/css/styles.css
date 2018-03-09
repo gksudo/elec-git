@@ -60,10 +60,20 @@ br.cb
   font-size: 2vmax;
 }
 
+.panel-collapse img
+{
+  float: right;
+}
+
 .credits
 {
   font-size: 10px;
   line-height: 10px;
   margin: auto;
   text-align: center;
+}
+
+.credits a
+{
+  color: black;
 }
