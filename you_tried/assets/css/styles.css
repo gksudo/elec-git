@@ -30,6 +30,11 @@ body
   margin-top: 15px;
 }
 
+#new-task
+{
+  float: right;
+  cursor: pointer;
+}
 
 br.cb
 {
