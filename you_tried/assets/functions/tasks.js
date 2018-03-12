@@ -2,7 +2,7 @@ var adding = 0;
 
 function new_task()
 {
-  if (adding === 1) return;
+  if ( adding === 1 ) return;
 
   var txt = '<div class="panel panel-default">'
             + '<div class="panel-heading">'
@@ -28,10 +28,9 @@ function new_task()
   title.addEventListener("keyup", function(event)
   {
     event.preventDefault();
-    if (event.keyCode === 13)
-    {
-        document.getElementById("ent").click();
-    }
+
+    if ( event.keyCode === 13 )
+      document.getElementById("ent").click();
   });
 }
 
@@ -43,13 +42,11 @@ function create_task( title )
   alert("up next");
 }
 
-function rm( id )
+function rm_task( id )
 {
-  var panel = id.parentNode.parentNode.parentNode;
+  var panel = document.getElementById(id.id);
+  var i     = panel.id;
 
-  $('id').parentNode.parentNode.parentNode.remove();
-
-  if ( confirm("Are you sure you want to delete this? " + panel.id) )
-  {
-  }
+  if ( confirm("Are you sure you want to delete this?") )
+    $("#" + i).remove();
 }
